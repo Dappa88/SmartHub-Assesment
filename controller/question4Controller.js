@@ -11,11 +11,15 @@ export const question4Controller = {
             if (!(email || password ||Confirmpassword || first_name || last_name || address))
                 return res.status(400).json({msg:"please fill in the blanks"})
 
-            if(!email.includes("@"))
+            if((!email.includes("@")) || (!email.includes(".com")))
                return res.status(400).json({msg:"email is incorrect"})
 
-            if(!(first_name || last_name).match(/^[0-9]+$/))
-               return res.status(400).json({msg:"must not contain numbers"})
+            if((first_name || last_name).match(/^[0-9]+$/))
+               return res.status(400).json({msg:"your name must not contain numbers"})
+            if((password.length<10))
+                return res.status(400).json({msg:"your password is not long enough"})
+            if(!(password.match(/[A-Z]/)))
+                return res.status(400).json({msg:"your password must contain uppercase"})
             
             
             if(password !== Confirmpassword)
