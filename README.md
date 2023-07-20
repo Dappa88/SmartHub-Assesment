@@ -22,8 +22,8 @@ At Smartech, I had the fantastic opportunity to contribute to this exciting proj
 
 The Smartech project offers a range of amazing features, including:
 
-- Feature 1: A brief description of feature 1.
-- Feature 2: A brief description of feature 2.
+- Feature 1: Basic authentication.
+- Feature 2: .
 - Feature 3: A brief description of feature 3.
 - ...
 
