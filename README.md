@@ -23,8 +23,8 @@ At Smartech, I had the fantastic opportunity to contribute to this exciting proj
 The Smartech project offers a range of amazing features, including:
 
 - Feature 1: Basic authentication.
-- Feature 2: .
-- Feature 3: A brief description of feature 3.
+- Feature 2: Basic CRUD
+- Feature 3: Working with mongoDB
 - ...
 
 ## Installation
